@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title> MVX Bingo </title>
+</head>
+
+<body>
+    <main class="wrapper">
+        <section class="container-left">
+            <section class="prize-draw">
+                <section class="cube-wrapper">
+                    <img src="./assets/casino.png" alt="" class="cube-image">
+                    <div class="result-number hidden"></div>
+                </section>
+                <h1 class="title-bingo">MVX Bingo</h1>
+                <p> Sortear um Número</p>
+                <div class="numbers">
+                    <input type="number" class="num-min" placeholder="entre">
+                    <input type="number" class="num-max" placeholder="e">
+                </div>
+                <div class="container-btn">
+                    <button type="button" class="btn-draw"> Sortear</button>
+                    <img src="./assets/reload.png" alt="" class="refresh">
+                </div>
+            </section>
+        </section>
+        <section class="container-right">
+            <p class="content"></p>
+            <section class="draw-numbers">
+                <p>Números Sorteados:</p>
+                <div class="mural"></div>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
