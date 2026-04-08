@@ -9,14 +9,15 @@
 body {
     background-color: black;
     color: white;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .wrapper {
     display: flex;
     justify-content: space-between;
-    min-height: 100dvh;
+    min-height: 100vh;
     width: 100%;
-    padding: 20px;
 }
 
 .container-left {
@@ -29,12 +30,10 @@ body {
 .container-right {
     width: 35%;
 
-    background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #ecfdf5 35%,
-        #bbf7d0 100%
-    );
+    background: linear-gradient(180deg,
+            #ffffff 0%,
+            #ecfdf5 35%,
+            #bbf7d0 100%);
 
     color: #166534;
 
@@ -78,7 +77,7 @@ body {
 .draw-numbers p {
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -144,8 +143,8 @@ body {
 
 .cube-wrapper {
     position: relative;
-    width: min(350px, 80vw);
-    height: min(350px, 80vw);
+    width: min(250px, 80vw);
+    height: min(250px, 80vw);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,8 +182,8 @@ body {
 
 
 .cube-image {
-    width: 350px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
     position: relative;
     top: 0;
     animation: spin 3s linear infinite;
@@ -192,7 +191,7 @@ body {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 2.2rem;
     position: relative;
     bottom: 5%;
 }
@@ -203,7 +202,7 @@ h1 {
 
 .result-number {
     position: absolute;
-    font-size: 10rem;
+    font-size: 5rem;
     font-weight: bold;
     color: #22c55e;
     text-shadow: 0 0 30px rgba(34, 197, 94, 0.9);
@@ -219,7 +218,7 @@ h1 {
     gap: 35px;
 
     & p {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -232,55 +231,67 @@ h1 {
 
     & .num-min,
     & .num-max {
-        font-size: 1.2rem;
-        padding: 18px;
+        font-size: .6rem;
+        padding: 12px;
         background-color: rgb(70, 70, 70);
         color: rgb(255, 255, 255);
         border-radius: 15px;
+        border: none;
+        outline: none;
     }
 
     & .num-min::placeholder,
     & .num-max::placeholder {
         color: rgb(255, 255, 255);
-        font-size: 1.8rem;
+        font-size: 1rem;
         text-align: center;
     }
 
 
 }
 
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .container-btn {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 10px;
 }
 
 .btn-draw {
-    padding: 15px 80px;
+    padding: 10px 20px;
     color: white;
     background-color: green;
     box-shadow:
         inset 0 0 6px rgba(34, 197, 94, 0.35),
         0 0 12px rgba(34, 197, 94, 0.45);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 
     &:hover {
         opacity: .8;
-        transition: .5s;
     }
 
     &:active {
         opacity: .6;
         transform: scale(.98);
-        transition: .2s;
     }
 }
 
 .refresh {
-    width: 45px;
+    width: 30px;
     cursor: pointer;
 }
 
