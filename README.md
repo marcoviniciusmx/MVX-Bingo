@@ -13,6 +13,9 @@
   <a href="#-getting-started">Como executar</a>
 </p>
 
+<br>
+
+<img src="./assets/Mockup - Bingo.png" alt="Mockup MVX-Bingo" width="100%">
 ---
 
 ## 🏠 About the project
